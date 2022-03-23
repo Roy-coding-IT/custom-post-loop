@@ -9,3 +9,5 @@ $loop = new WP_Query( array(
 ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+<?php endwhile; wp_reset_query(); ?>
